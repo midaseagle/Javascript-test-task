@@ -13,11 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body
-    class="d-flex justify-content-center align-items-center flex-column"
-    style="height: 100vh"
-  >
-    <div class="center" style="max-width: 90%; width: 700px">
+  <body class="d-flex align-items-center flex-column">
+    <div class="center" style="width: 700px">
       <form>
         <div class="form-group">
           <label for="firstName" id="firstNameLabel">First Name</label>
@@ -92,9 +89,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div id="errors"> <span>
-        X
-      </span></div>
+      <div id="errors"><span> X </span></div>
       <table class="table" style="margin-top: 100px">
         <thead>
           <tr>
@@ -110,18 +105,21 @@
         <tbody></tbody>
       </table>
     </div>
-    <style> 
-      #errors{
+    <style>
+      #errors {
         position: relative;
         display: none;
         background-color: white;
         padding: 10px;
         color: red;
-      } 
-      #errors >span{
-        position: absolute; top: 5px; right: 5px;
+      }
+
+      #errors > span {
+        position: absolute;
+        top: 5px;
+        right: 5px;
         cursor: pointer;
       }
-      </style>
+    </style>
   </body>
 </html>
