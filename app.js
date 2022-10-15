@@ -78,12 +78,12 @@ function renderData(data) {
 
   removeButton.innerHTML = "X";
   notesButton.innerHTML = "NOTES";
-  tr.innerHTML = `<td>${data.id}</td>
-    <td>${data.firstName}</td>
-    <td>${data.lastName}</td>
-    <td>${data.address}</td>
-    <td>${data.birthDate}</td>
-    <td>${data.gender}</td>
+  tr.innerHTML = `<td data-label="#">${data.id}</td>
+    <td data-label="FirstName">${data.firstName}</td>
+    <td data-label="LastName">${data.lastName}</td>
+    <td data-label="Address">${data.address}</td>
+    <td data-label="Birth Date">${data.birthDate}</td>
+    <td data-label="Gender">${data.gender}</td>
  `;
   tr.appendChild(removeButton);
   tr.appendChild(notesButton);
